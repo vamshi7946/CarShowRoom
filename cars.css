@@ -1,0 +1,68 @@
+.EntryContainer
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.choose{
+    font-family: "Italic";
+    font-style: italic;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.bmwCar{
+    height:40vh;
+    width:40vw;
+}
+.entry-image{
+    height:80vh;
+    width:80vw;
+    border: 0px;
+}
+.outer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 40px;
+}
+.cars-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.cars-image{
+    height:30vh;
+    width:28vw;
+    border:0px;
+    border-style: none;
+}
+.car-brand{
+    text-align: center;
+}
+.car-brand1{
+    height:50vh;
+    width:25vw;
+    padding:25px;
+}
+.button-align{
+    height:100vh;
+    width:100vw;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.button{
+    border-width: 0px;
+    background-color: white;
+}
+.colorButton{
+    height:38px;
+    width:80px;
+    border-radius: 3px;
+    background-color: blueviolet;
+    color: white;
+
+}

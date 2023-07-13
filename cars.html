@@ -1,0 +1,859 @@
+<html>
+    <head>
+        <title>Car Show Room</title>
+        <link rel="stylesheet" href="cars.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+        <body>
+        <div id="sectionContainer" >
+          <div class="EntryContainer">
+            <h1 class="choose">Welcome To Our Car Show Room</h1>
+            <button onclick="display('sectionEntryContainer')" class="button"><img src="https://wallpapercave.com/wp/wp7359234.jpg" class="entry-image" alt="car show room"/></button>
+            <h3 class="welcome-heading">Click on Image to enter</h3>
+        </div>
+        </div>
+        <div id="sectionEntryContainer">
+            <div class="outer-container">
+              <h1 class="choose">Choose your brand...</h1>
+                <div class="cars-display">
+                    <div class="car-brand">
+                        <button onclick="display('sectionMercedes')" class="button"><img src="https://purepng.com/public/uploads/large/51506279849it5u5igquhnywv0m4ima5etlldz2xsaszbnw9ogptgljrt2e93g9rvlosq07m1mrwry4aqr1njl2t7ajidg5bimclgegjitwgl8p.png" class="cars-image" alt="benz car"/></button>
+                        <p class="car">Mercedes Benz</p>
+                    </div>
+                    <div class="car-brand">
+                        <button onclick="display('sectionAudi')" class="button"><img src="https://imgd.aeplcdn.com/0x0/cw/ec/21724/Audi-R8-Right-Front-Three-Quarter-66713.jpg?v=201711021421"  class="cars-image" alt="Oddi car"/></button>
+                        <p class="car">Audi</p>
+                    </div>
+                    <div class="car-brand">
+                        <button onclick="display('sectionBMW')" class="button"><img src="https://cdn.inventoryrsc.com/269542054_649229ec38a8422df1dfcb30.jpg"  class="cars-image " alt="BMW car"/></button>
+                        <p class="car">BMW</p>
+                    </div>
+                </div>
+                <div class="cars-display">
+                    <div class="car-brand">
+                        <button onclick="display('sectionJaguar')" class="button"><img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/46994/jaguar-f-type-right-front-three-quarter18.jpeg" class="cars-image" alt="Jaguar car"/></button>
+                        <p class="car">Jaguar</p>
+                    </div>
+                    <div class="car-brand">
+                        <button onclick="display('sectionSkoda')" class="button"><img src="https://imgd-ct.aeplcdn.com/1056x660/n/76neh4a_1520267.jpg?q=75" class="cars-image" alt="skoda car"/></button>
+                        <p class="car">Skoda</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button-align">
+              <button  class="colorButton" onclick="display('sectionContainer')">Back</button>
+            </div>
+        </div>
+        <div id="sectionMercedes">
+            <div class="outer-container">
+                <div class="cars-display">
+                    <div class="car-brand1">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://inv.assets.sincrod.com/ChromeColorMatch/us/TRANSPARENT_cc_2023MBSA20011_01_1280_144.png" class="d-block w-100 cars-image" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://vehicle-images.dealerinspire.com/stock-images/chrome/1f56ae6bc9b5d532735afff2dfaa609b.png" class="d-block w-100 cars-image" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://imgd-ct.aeplcdn.com/1200x900/n/cw/ec/108503/right-front-three-quarter.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                            <div>
+                              <h4 class="car-name">Mercedes Benz ml</h4>
+                        <p class="car-cost">Cost : $57000<br>Top speed : 180</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-brand1">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://d2ivfcfbdvj3sm.cloudfront.net/7fc965ab77efe6e0fa62e4ca1ea7673bb65b41500d1e3d8e88cb10/stills_0640_png/MY2022/51016/51016_st0640_116.png" class="d-block w-100 cars-image" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://assets.local-car-finder.com/images/_2022/mercedes-benz/eqs/450-Sedan.png" class="d-block w-100 cars-image" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://file.kelleybluebookimages.com/kbb/base/evox/CP/50359/2023-Mercedes-Benz-Mercedes-EQ%20EQS-side_50359_001_2400x1800_149.png" class="d-block w-100 cars-image" alt="...">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                            <h4 class="car-name">Mercedes Benz eqs</h4>
+                        <p class="car-cost">Cost : $60000<br>Top speed : 170</p>
+                          </div>                                                                              
+                    </div>
+                    <div class="car-brand1">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://imgd.aeplcdn.com/0X0/n/cw/ec/115149/maybach-s-class-exterior-right-front-three-quarter.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Galleries/20200610044936_2020-mercedes-maybach-s650-night-edition-front.jpg&w=872&h=578&q=75&c=1" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Galleries/20200610044936_2020-mercedes-maybach-s650-night-edition-rear.jpg&w=872&h=578&q=75&c=1" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                        <h4 class="car-name">Mercedes Benz s-class</h4>
+                        <p class="car-cost">Cost : $87000<br>Top speed : 240</p>
+                      </div>
+                    </div>                    
+                </div>
+                <div class="cars-display">
+                    <div class="car-brand1">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://www.brabus.com/_Resources/Persistent/d/f/5/a/df5a3f3bdb815cfeab36ec09a82d04ee2b194f1f/G350Adventure%20%2838%29-1169x780.jpg?bust=df5a3f3b?bust=df5a3f3b" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://www.brabus.com/_Resources/Persistent/f/1/4/8/f14802ea71afc3bcc23bc80dcfef86b5daed6a1d/G350Adventure%20%2839%29-1169x780.jpg?bust=f14802ea?bust=f14802ea" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://www.brabus.com/_Resources/Persistent/d/3/c/6/d3c69aeedc0d469f16f4ba77233e67674894cbf3/G350Adventure%20%2840%29-1169x780.jpg?bust=d3c69aee?bust=d3c69aee" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      <h4 class="car-name">Mercedes Benz Adventure</h4>
+                        <p class="car-cost">Cost : $47000<br>Top speed : 180</p>
+                    </div>
+                    <div class="car-brand1">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://imgd.aeplcdn.com/0X0/n/cw/ec/148919/amg-sl55-roadster-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://www.livemint.com/lm-img/img/2023/06/21/600x338/roadster_1687346322645_1687346331430.png" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://www.mercedes-benz.com.cy/passengercars/mercedes-benz-cars/models/sl/roadster-r232/_jcr_content/image.MQ6.2.2x.20220418101746.png" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      <h4 class="car-name">Mercedes Benz Sportstar</h4>
+                        <p class="car-cost">Cost : $67000<br>Top speed : 220</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button-align">
+              <button  class="colorButton" onclick="display('sectionEntryContainer')">Back</button>
+            </div>
+          </div>
+        <div id="sectionAudi">
+          <div class="outer-container">
+              <div class="cars-display">
+                  <div class="car-brand1">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/100073/rs5-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="https://imgd-ct.aeplcdn.com/1056x660/n/oi7ba4a_1512975.jpg?q=75" class="d-block w-100 cars-image" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="https://imgd-ct.aeplcdn.com/1056x660/n/667j9va_1598775.jpg?q=75" class="d-block w-100 cars-image" alt="...">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                          <h4 class="car-name">Audi s5 sportback</h4>
+                        <p class="car-cost">Cost : $60000<br>Top speed : 170</p>
+                      </div>
+                  </div>
+                  <div class="car-brand1">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="https://m.atcdn.co.uk/vms/media/03c149b5dd074c6fabc7df5fd6ea9c45.jpg" class="d-block w-100 cars-image" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="https://images.dealer.com/ddc/vehicles/2023/Audi/Q7/SUV/still/side-left/side-left-640-en_US.jpg" class="d-block w-100 cars-image" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="https://cars.usnews.com/static/images/Auto/izmo/i36138923/2018_audi_q7_angularfront.jpg" class="d-block w-100 cars-image" alt="...">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                          <h4 class="car-name">Audi q7</h4>
+                        <p class="car-cost">Cost : $50000<br>Top speed : 180</p>
+                        </div>
+                  </div>
+                  <div class="car-brand1">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://imgd.aeplcdn.com/0X0/n/cw/ec/47073/e-tron-gt-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://imgd.aeplcdn.com/0x0/n/wuctt4a_1535253.jpg" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://images.dealer.com/ddc/vehicles/2023/Audi/e-tron%20GT/Sedan/trim_Premium_Plus_c23d89/color/Ibis%20White-T9T9-240%2C240%2C238-640-en_US.jpg" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                      <h4 class="car-name">Audi e-tron gt</h4>
+                        <p class="car-cost">Cost : $80000<br>Top speed : 270</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="cars-display">
+                  <div class="car-brand1">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://images.dealer.com/ddc/vehicles/2024/Audi/Q8%20e-tron/SUV/color/Chronos%20Gray%20Metallic-Z7Z7-89,88,86-640-en_US.jpg" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://www.electrifying.com/files/Nu62ZACgnaofv91L/Q8-etron.png" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://web21st.imgix.net/assets/images/new-vehicles/audi/audi-q8-e-tron-2022.png" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                      <h4 class="car-name">Audi Q8 e-tron</h4>
+                        <p class="car-cost">Cost : $75000<br>Top speed : 250</p>
+                    </div>
+                  </div>
+                  <div class="car-brand1">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://imgd.aeplcdn.com/0X0/n/cw/ec/141373/q3-sportback-exterior-right-front-three-quarter.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://m.atcdn.co.uk/vms/media/43787e1b7e3d4daeba7732de50b30967.jpg" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/q_auto,c_crop,f_auto,fl_lossy,x_222,y_150,w_953,h_714/w_600,h_450,c_fill/auto-client/6eeb55a49a2ad7ffd0ce83d11cfd7717/q3.jpg" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                      <h4 class="car-name">Audi q3 sportback</h4>
+                        <p class="car-cost">Cost : $59000<br>Top speed : 210</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="button-align">
+            <button  class="colorButton" onclick="display('sectionEntryContainer')">Back</button>
+          </div>          
+      </div>
+      <div id="sectionBMW">
+        <div class="outer-container">
+            <div class="cars-display">
+                <div class="car-brand1">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/150125/m2-exterior-right-front-three-quarter.jpeg?isig=0" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://imgd.aeplcdn.com/0x0/cw/ec/37092/BMW-M2-Exterior-141232.jpg?wm=0" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/a155a448-42be-4bfc-a923-45cfcbec8994/3f004079-8a84-41ec-8939-d220496fa899.png" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                        <h4 class="car-name">BMW m2</h4>
+                        <p class="car-cost">Cost : $60000<br>Top speed : 210</p>
+                    </div>
+                </div>
+                <div class="car-brand1">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://images.91wheels.com/assets/b_images/main/models/profile/profile1661239161.jpg" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Z4ModelImage.jpg&w=872&h=578&q=75&c=1" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://cars.usnews.com/static/images/Auto/izmo/i159614677/2022_bmw_z4_angularfront.jpg" class="d-block w-100 cars-image" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                        <h4 class="car-name">BMW z4</h4>
+                        <p class="car-cost">Cost : $70000<br>Top speed : 250</p>
+                      </div>
+                </div>
+                <div class="car-brand1">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://imgd.aeplcdn.com/0x0/n/0g6go0b_1636459.jpg" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.hgmsites.net/lrg/2020-bmw-7-series-740i-xdrive-sedan-angular-front-exterior-view_100721603_l.jpg" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://ymimg1.b8cdn.com/resized/car_model/5518/logo/listing_main_7_logo.jpg" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <h4 class="car-name">BMW 7 series</h4>
+                        <p class="car-cost">Cost : $55000<br>Top speed : 240</p>
+                  </div>
+                </div>
+            </div>
+            <div class="cars-display">
+                <div class="car-brand1">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://d1b9m7lmejcu5w.cloudfront.net/gallery-pictures/izmo/0b69dec05b-b48992.jpg" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://imgd.aeplcdn.com/0x0/n/aqftp0b_1638757.jpg" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <h4 class="car-name">BMW x7</h4>
+                        <p class="car-cost">Cost : $80000<br>Top speed : 280</p>
+                  </div>
+                </div>
+                <div class="car-brand1">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/56433/exterior-right-front-three-quarter.jpeg" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.bmw.in/content/bmw/marketIN/bmw_in/en_IN/all-models/6-series/gran-turismo/2021/bmw-6-series-gran-turismo-highlights/jcr:content/par/offers_copy_copy_cop/items/offersitem/image.transform/linemosaic885/image.1664195491152.jpg" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.carandbike.com/car-images/colors/bmw/6-series-gran-turismo/bmw-6-series-gran-turismo-tanzanite-blue.png?v=1617892553" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <h4 class="car-name">BMW 6 series</h4>
+                        <p class="car-cost">Cost : $60000<br>Top speed : 210</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-align">
+          <button  class="colorButton" onclick="display('sectionEntryContainer')">Back</button>
+        </div>        
+    </div>
+    <div id="sectionJaguar">
+      <div class="outer-container">
+          <div class="cars-display">
+              <div class="car-brand1">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://imgd.aeplcdn.com/664x374/n/jxvj3sa_1483589.jpg?q=75" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://www.ccarprice.com/products/Jaguar-F-Type-Convertible-Auto-R-AWD-2020.jpg" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://imgd-ct.aeplcdn.com/1280x720/n/cw/ec/46994/jaguar-f-type-right-front-three-quarter18.jpeg?q=75" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                      <h4 class="car-name">Jaguar f type</h4>
+                      <p class="car-cost">Cost : $80000<br>Top speed : 280</p>
+                  </div>
+              </div>
+              <div class="car-brand1">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://imgd.aeplcdn.com/664x374/cw/ec/21686/Jaguar-XJ-L-Right-Front-Three-Quarter-64990.jpg?v=201711021421&q=75" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://imgd.aeplcdn.com/1056x594/n/vwrmrsa_1478302.jpg?q=75" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://images.news18.com/ibnlive/uploads/2013/02/jaguarxj-260213.jpg" class="d-block w-100 cars-image" alt="...">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                      <h4 class="car-name">Jaguar xj</h4>
+                      <p class="car-cost">Cost : $70000<br>Top speed : 210</p>
+                    </div>
+              </div>
+              <div class="car-brand1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://web21st.imgix.net/assets/images/new-vehicles/jaguar/jaguar-f-pace-2020-r-dynamic-hse-black-carpathian-grey.png?w=600&auto=format" class="d-block w-100 cars-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://www.autobild.es/sites/autobild.es/public/styles/main_element/public/dc/fotos/Jaguar-F-Pace_2017_A01.jpg?itok=cgAa0Vgh" class="d-block w-100 cars-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://images.91wheels.com/assets/b_images/main/models/profile/profile1661240340.jpg" class="d-block w-100 cars-image" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <h4 class="car-name">Jaguar f pace</h4>
+                      <p class="car-cost">Cost : $75000<br>Top speed : 240</p>
+                </div>
+              </div>
+          </div>
+          <div class="cars-display">
+              <div class="car-brand1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Jaguar-I-Pace-231120211747.jpg" class="d-block w-100 cars-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_360,q_auto:best,w_640/v1/cms/uploads/tsivs149beiwfjwqsfks" class="d-block w-100 cars-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://images.hgmsites.net/lrg/2019-jaguar-i-pace-se-awd-angular-front-exterior-view_100700732_l.jpg" class="d-block w-100 cars-image" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <h4 class="car-name">Jaguar I pace</h4>
+                      <p class="car-cost">Cost : $85000<br>Top speed : 300</p>
+                </div>
+              </div>
+              <div class="car-brand1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://cdn.hum3d.com/wp-content/uploads/Jaguar/069_Jaguar_Vision_Gran_Turismo_coupe_concept_2020/Jaguar_Vision_Gran_Turismo_coupe_concept_2020_1000_0001.jpg" class="d-block w-100 cars-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://cdn.hum3d.com/wp-content/uploads/Jaguar/069_Jaguar_Vision_Gran_Turismo_coupe_concept_2020/Jaguar_Vision_Gran_Turismo_coupe_concept_2020_1000_0002.jpg" class="d-block w-100 cars-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://360views.hum3d.com/original/Jaguar/069_Jaguar_Vision_Gran_Turismo_coupe_concept_2020/Jaguar_Vision_Gran_Turismo_coupe_concept_2020_360_1080_200-8.jpg" class="d-block w-100 cars-image" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <h4 class="car-name">jaguar vision gran</h4>
+                      <p class="car-cost">Cost : $100000<br>Top speed : 400</p>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="button-align">
+        <button  class="colorButton" onclick="display('sectionEntryContainer')">Back</button>
+      </div>      
+  </div>
+  <div id="sectionSkoda">
+    <div class="outer-container">
+        <div class="cars-display">
+            <div class="car-brand1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/44088/slavia-exterior-right-front-three-quarter-5.jpeg?isig=0" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://stimg.cardekho.com/images/car-images/large/Skoda/Slavia/9813/1681809102154/222_tornado-red_b5011a.jpg?impolicy=resize&imwidth=420" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://imgd.aeplcdn.com/0x0/n/fs7jn3a_1581675.jpg" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <h4 class="car-name">Skoda Slavia</h4>
+                    <p class="car-cost">Cost : $50000<br>Top speed : 180</p>
+                </div>
+            </div>
+            <div class="car-brand1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://imgd-ct.aeplcdn.com/1200x900/n/cw/ec/145023/kushaq-right-front-three-quarter-2.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.skodajmd.com/uploads/colorimage/21165_tereador%20red.jpg" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/145021/kushaq-exterior-front-view.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <h4 class="car-name">Skoda Kushaq</h4>
+                    <p class="car-cost">Cost : $70000<br>Top speed : 210</p>
+                  </div>
+            </div>
+            <div class="car-brand1">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://imgd.aeplcdn.com/0X0/n/cw/ec/49051/kodiaq-exterior-right-front-three-quarter.jpeg?isig=0&q=75" class="d-block w-100 cars-image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://m.atcdn.co.uk/vms/media/9476d1c7107c44e3bc50d0d812ff7eab.jpg" class="d-block w-100 cars-image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://auto-wimar.pl/wp-content/uploads/2022/12/kodiaq-4.png" class="d-block w-100 cars-image" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <h4 class="car-name">Skoda Kodiaq</h4>
+                    <p class="car-cost">Cost : $75000<br>Top speed : 240</p>
+              </div>
+            </div>
+        </div>
+        <div class="cars-display">
+            <div class="car-brand1">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://stimg2.cardekho.com/images/carNewsEditorImages/20170810_160617/20600/skoda0.jpg?impolicy=resize&imwidth=420" class="d-block w-100 cars-image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://cdn.skoda-storyboard.com/2017/03/Ra_MC_0002.jpg" class="d-block w-100 cars-image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://image-server.cloudflare-redfishgroup.co.uk/newcarimage.jpg?cdb=CAR&mak=Skoda&ran=FABIA&mod=FABIA%20HATCHBACK&myr=2021&var=1.0+TSI+110+Monte+Carlo+5dr+DSG&ser=Monte%20Carlo&fue=Petrol&dir=right&pfl=front&stv=dmk&clr=Brilliant%20silver,Brilliant%20silver,Graphite%20grey,Graphite%20grey,Moon%20white,Moon%20white,Race%20blue,Race%20blue,Black%20magic,Black%20magic,Phoenix%20orange,Phoenix%20orange,Velvet%20red,Velvet%20red&wdt=800&b=533" class="d-block w-100 cars-image" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <h4 class="car-name">Skoda Monte Carlo</h4>
+                    <p class="car-cost">Cost : $85000<br>Top speed : 300</p>
+              </div>
+            </div>
+            <div class="car-brand1">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://imgd.aeplcdn.com/642x336/n/cw/ec/39039/superb-exterior-right-front-three-quarter-2.jpeg?q=75" class="d-block w-100 cars-image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_360,q_auto:best,w_640/v1/cms/uploads/opxmnxypknasedyaux8v" class="d-block w-100 cars-image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Skoda-Superb-210720201150.jpg" class="d-block w-100 cars-image" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <h4 class="car-name">Skoda Superb</h4>
+                    <p class="car-cost">Cost : $50000<br>Top speed : 200</p>
+              </div>
+            </div>
+        </div>
+        <div class="button-align">
+          <button  class="colorButton" onclick="display('sectionEntryContainer')">Back</button>
+        </div>        
+    </div>
+</div>
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </body>
+</html>
